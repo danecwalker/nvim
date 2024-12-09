@@ -3,7 +3,8 @@ vim.g.mapleader = " "
 local keymap = vim.keymap
 
 keymap.set("i", "jk", "<ESC>", { desc = "Exit insert mode with jk" })
-keymap.set("n", "<leader>s", ":Neotree filesystem toggle left<CR>", { desc = "File tree" })
+keymap.set("n", "<leader>s", ":Neotree filesystem reveal left<CR>", { desc = "File tree" })
+keymap.set("n", "<leader>xs", ":Neotree close<CR>", { desc = "File tree" })
 keymap.set("n", "<leader>nh", ":nohl<CR>", { desc = "Clear highlights" })
 keymap.set("n", "<leader>+", "<C-a>", { desc = "Increment Number" })
 keymap.set("n", "<leader>-", "<C-x>", { desc = "Decrement Number" })

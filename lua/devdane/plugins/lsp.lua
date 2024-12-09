@@ -9,7 +9,7 @@ return {
     "williamboman/mason-lspconfig.nvim",
      config = function()
       require("mason-lspconfig").setup({
-        ensure_installed = { "lua_ls", "gopls", "ts_ls", "html" },
+        ensure_installed = { "lua_ls", "gopls", "ts_ls", "html", "cssls" },
       })
     end
   },
@@ -30,6 +30,9 @@ return {
         capabilities = caps,
       })
       lspconfig.html.setup({
+        capabilities = caps,
+      })
+      lspconfig.cssls.setup({
         capabilities = caps,
       })
 
